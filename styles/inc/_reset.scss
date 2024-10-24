@@ -1,0 +1,41 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 390px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.heading{
+    width: 100%;
+    @include center;
+    .container{
+        @include flex(column, space-between, center);
+        .heading_title{
+            width: 100%;
+            @include center;
+            p{
+                font-size: 12px;
+                font-weight: 700;
+                line-height: 18px;
+                letter-spacing: 0px;
+                color: var(--primary-color);
+                padding-top: 30px;
+                padding-bottom: 30px;
+            }
+        }
+    }
+}
+  
